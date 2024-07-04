@@ -1,0 +1,6 @@
+node_modules/
+src/
+dist/*.map
+*.log
+.gitignore
+rollup.config.js

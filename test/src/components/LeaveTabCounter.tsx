@@ -1,5 +1,9 @@
 import { useEffect } from 'react'
-import { useDocumentVisibility } from 'webbee-use-visibility-document'
+//использование хука локально
+import useDocumentVisibility  from './../../../src/useDocumentVisibility'
+
+// загрузка из npm пакета
+// import { useDocumentVisibility } from 'webbee-use-visibility-document'
 
 export const LeaveTabCounter = () => {
   const { count, visible, onVisibilityChange } = useDocumentVisibility()

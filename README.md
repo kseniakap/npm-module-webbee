@@ -18,7 +18,7 @@
 - Изменение пути для хука в компоненте LeaveTabCounter.tsx
   ("src/componets/LeaveTabCounter.tsx").
   Изменяем данный путь:
-  `import useDocumentVisibility from './../../../src/useDocumentVisibility'`
+  `import useDocumentVisibility from './../hooks/useDocumentVisibility'`
   на
   `import { useDocumentVisibility } from 'webbee-use-visibility-document'`
   импорт будет происходить из созданного модуля

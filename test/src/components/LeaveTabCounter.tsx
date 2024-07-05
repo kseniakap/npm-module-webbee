@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 //использование хука локально
-import useDocumentVisibility  from './../../../src/useDocumentVisibility'
+import useDocumentVisibility from './../hooks/useDocumentVisibility'
 
 // загрузка из npm пакета
 // import { useDocumentVisibility } from 'webbee-use-visibility-document'
@@ -17,7 +17,7 @@ export const LeaveTabCounter = () => {
       console.log('second handler', isVisible)
     })
 
-    setTimeout(() => unsubscribeSecondHandler(), 5000) 
+    setTimeout(() => unsubscribeSecondHandler(), 5000)
   }, [])
 
   return (

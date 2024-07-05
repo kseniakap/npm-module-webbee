@@ -14,7 +14,7 @@ const useDocumentVisibility = () => {
   }, [])
 
   const handleVisibilityChange = () => {
-    if (document.hidden) {
+    if (document.visibilityState === 'hidden') {
       setVisible(false)
       setCount((prevCount) => prevCount + 1)
     } else {
@@ -24,7 +24,7 @@ const useDocumentVisibility = () => {
 
   const onVisibilityChange = (fn: (isVisible: boolean) => void) => {
     const visibilityHandler = () => {
-      fn(!document.hidden)
+      fn(document.visibilityState === 'visible')
     }
     document.addEventListener('visibilitychange', visibilityHandler)
     return () => {

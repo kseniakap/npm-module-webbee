@@ -2,8 +2,6 @@
 
 - Клонирование из ветки feature
   `git clone -b feature https://github.com/kseniakap/npm-module-webbee.git`
-- Переход в папку test
-  `cd test`
 - Установка зависимостей
   `npm i`
   или
